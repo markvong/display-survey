@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Survey</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1 id="title">
+      Please take a moment and fill out the survey.
+    </h1>
+
+    <!-- 2 -->
+    <p id="description">
+      This survey will help us better understand who you are.
+    </p>
+
+    <!-- 3 -->
+    <form id="survey-form" action="/">
+      <div id="name-div">
+        <!-- 10 -->
+        <label id="name-label" for="name" class="question">Name:</label>
+        <!-- 4 -->
+        <input type="text" id="name" name="name" placeholder="name" required />
+      </div>
+
+      <div id="email-div">
+        <!-- 10 -->
+        <label id="email-label" for="email" class="question">Email:</label>
+        <!-- 5, 6 -->
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        />
+      </div>
+
+      <div id="number-div">
+        <!-- 10 -->
+        <label id="number-label" for="number" class="question">Age:</label>
+        <!-- 7, 8, 9-->
+        <input
+          type="number"
+          id="number"
+          name="number"
+          max="99"
+          min="10"
+          placeholder="Select your age"
+        />
+      </div>
+
+      <div id="dropdown-div">
+        <!-- 12 -->
+        <label for="dropdown" class="question">What is your occupation?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="" selected disabled hidden>Select occupation</option>
+          <option value="student">student</option>
+          <option value="engineer">engineer</option>
+        </select>
+      </div>
+
+      <div id="radio-div">
+        <!-- 13 -->
+        <header id="radio-header" class="question">
+          Do you enjoy what you do?
+        </header>
+        <label for="yes">
+          <input type="radio" id="yes" value="yes" name="enjoy" /> Yes
+        </label>
+        <label for="no">
+          <input type="radio" id="no" value="no" name="enjoy" /> No
+        </label>
+
+        
+      </div>
+
+      <div id="check-div">
+        <!-- 14 -->
+        <header id="check-header" class="question">
+          What are things you would want improved in your life?
+        </header>
+        <label for="career">
+          <input type="checkbox" id="career" value="career" name="change" />
+          career
+        </label>
+        <label for="personal">
+          <input type="checkbox" id="personal" value="personal" name="change" />
+          personal
+        </label>
+        <label for="fitness">
+          <input type="checkbox" id="fitness" value="fitness" name="change" />
+          fitness
+        </label>
+        <label for="spirituality">
+          <input
+            type="checkbox"
+            id="spirituality"
+            value="spirituality"
+            name="change"
+          />
+          spirituality
+        </label>
+      </div>
+
+      <div id="text-div">
+        <!-- 15 -->
+        <label for="textarea" class="question">Please provide additional comments.</label>
+        <textarea id="textarea" name="textarea" rows="5" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <!-- 16 -->
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </form>
+<!--         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+  </body>
+</html>
