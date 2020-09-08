@@ -1,0 +1,74 @@
+/* CSS files add styling rules to your content */
+:root {
+  --theme-blue: rgba(97,115,166,0.7);
+  --theme-purp: rgba(109,93,161,1);
+  --theme-aqua: rgba(93,144,161,1);
+  --theme-white: #ffffff;
+}
+
+body {
+  font-family: verdana;
+  margin: 2em;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(30deg, var(--theme-blue), var(--theme-aqua));
+  color: var(--theme-white);
+}
+
+form {
+  font-size: 20px;
+  max-width: 800px;
+  align-self: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  background-color:var(--theme-blue);
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+input, select, textarea {
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+*:focus {
+  outline: none;
+}
+
+div {
+  display:flex;
+  flex-direction:column;
+  text-align: left;
+  margin: 3% 0 0 0;
+}
+
+
+textarea {
+  resize: none;
+  width:95%;
+}
+
+button {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  color:var(--theme-white);
+  background-color:var(--theme-aqua);
+}
+
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
